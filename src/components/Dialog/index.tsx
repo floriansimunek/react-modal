@@ -1,4 +1,5 @@
 import CloseIcon from '@components/CloseIcon';
+import DialogButton from '@components/DialogButton';
 import { DialogProps } from '@types';
 import './index.scss';
 
@@ -16,10 +17,8 @@ const Dialog: React.FC<DialogProps> = ({ children, onClick }) => {
         </div>
         <div className="modal__dialog--body">{children}</div>
         <div className="modal__dialog--footer">
-          <button type="button" onClick={onClick}>
-            Close
-          </button>
-          <button type="button">Action</button>
+          <DialogButton onClick={onClick}>Close</DialogButton>
+          <DialogButton type={'color'}>Action</DialogButton>
         </div>
       </div>
     </div>
