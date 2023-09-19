@@ -1,4 +1,5 @@
 import Modal from '@components/Modal';
+import '@components/index.css';
 
 const App = () => {
   return (
