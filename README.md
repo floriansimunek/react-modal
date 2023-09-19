@@ -94,6 +94,10 @@ export default App;
 
 `onCreate` trigger when component is create
 
+```js
+<Modal onCreate={() => console.log('onCreate')}>...</Modal>
+```
+
 [Back to top](#react-modal)
 
 ### onFocus
