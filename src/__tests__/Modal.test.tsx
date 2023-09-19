@@ -57,5 +57,12 @@ describe('Modal', () => {
       act(() => container.click());
       expect(fn).toBeCalledTimes(1);
     });
+
+    it('should call onCreate function when menu is created', () => {
+      const fn = jest.fn();
+      render(<Modal onCreate={fn}></Modal>);
+
+      expect(fn).toBeCalledTimes(1);
+    });
   });
 });
