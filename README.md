@@ -84,6 +84,10 @@ export default App;
 
 `onClose` trigger when menu is closed
 
+```js
+<Modal onClose={() => console.log('onClose')}>...</Modal>
+```
+
 [Back to top](#react-modal)
 
 ### onCreate

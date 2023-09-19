@@ -30,7 +30,7 @@ describe('Modal', () => {
     });
   });
 
-  describe('When component called with onOpen event', () => {
+  describe('When component called with events', () => {
     it('should call onOpen function when menu is opened', () => {
       const fn = jest.fn();
       render(<Modal onOpen={fn}></Modal>);
@@ -43,6 +43,19 @@ describe('Modal', () => {
       act(() => container.click());
       act(() => button.click());
       expect(fn).toBeCalledTimes(2);
+    });
+
+    it('should call onClose function when menu is closed', () => {
+      const fn = jest.fn();
+      render(<Modal onClose={fn}></Modal>);
+      const button = screen.getByTestId('modal__button');
+      const container = screen.getByTestId('modal__container');
+
+      expect(fn).toBeCalledTimes(0);
+      act(() => button.click());
+      expect(fn).toBeCalledTimes(0);
+      act(() => container.click());
+      expect(fn).toBeCalledTimes(1);
     });
   });
 });

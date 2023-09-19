@@ -19,6 +19,7 @@ export type ModalProps = {
   children?: React.ReactNode;
   title?: string;
   onOpen?: () => void;
+  onClose?: () => void;
 };
 
 export type CloseIconProps = {
