@@ -1,0 +1,26 @@
+.modal {
+  .modal__dialog__button {
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &[data-rm-button-type='white'] {
+      background-color: white;
+      color: var(--rm-darkgray);
+    }
+
+    &[data-rm-button-type='color'] {
+      background-color: var(--rm-primary-color);
+      color: white;
+    }
+
+    &:active {
+      background-color: var(--rm-primary-color);
+      color: white;
+    }
+  }
+}
