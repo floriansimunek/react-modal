@@ -4,13 +4,23 @@ import { ModalProps } from '@types';
 import { useEffect, useState } from 'react';
 import './index.scss';
 
-const Modal: React.FC<ModalProps> = ({ children, title, onOpen, onClose }) => {
+const Modal: React.FC<ModalProps> = ({
+  children,
+  title,
+  onOpen,
+  onClose,
+  onCreate,
+}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isClicked, setIsClicked] = useState<boolean>(false);
 
   useEffect(() => {
     isOpen ? onOpen && onOpen() : onClose && isClicked && onClose();
   }, [isOpen, isClicked, onOpen, onClose]);
+
+  useEffect(() => {
+    onCreate && onCreate();
+  }, [onCreate]);
 
   return (
     <div className="modal" data-testid="modal" data-rm-is-open={isOpen}>
