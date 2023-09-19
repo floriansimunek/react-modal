@@ -1,0 +1,16 @@
+.modal {
+  .modal--button {
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: var(--rm-primary-color);
+      color: white;
+    }
+  }
+}
