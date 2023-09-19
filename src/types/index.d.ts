@@ -11,3 +11,7 @@ export type DialogProps = {
 export type ModalProps = {
   children?: React.ReactNode;
 };
+
+export type CloseIconProps = {
+  onClick?: (event: React.MouseEvent<HTMLElement>) => void;
+};
