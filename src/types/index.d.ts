@@ -1,5 +1,6 @@
 export type ButtonProps = {
   children?: string;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
 export type DialogProps = {
