@@ -12,10 +12,12 @@ export type DialogButtonProps = {
 export type DialogProps = {
   children?: React.ReactNode;
   onClick?: () => void;
+  title?: string;
 };
 
 export type ModalProps = {
   children?: React.ReactNode;
+  title?: string;
 };
 
 export type CloseIconProps = {
