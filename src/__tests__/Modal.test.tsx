@@ -19,8 +19,8 @@ describe('Modal', () => {
     });
 
     it('should render the Dialog', () => {
-      const dialog = screen.getByTestId('modal--dialog');
-      expect(dialog).toBeInTheDocument();
+      const container = screen.getByTestId('modal--container');
+      expect(container).toBeInTheDocument();
     });
 
     it('should render the Modal', () => {
