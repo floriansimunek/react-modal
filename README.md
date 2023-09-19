@@ -4,6 +4,8 @@ Simple Modal working with React
 
 - [Installation](#installation)
 - [Usage/Examples](#usageexamples)
+- [Props](#props)
+  - [Examples](#props-examples)
 
 ## Installation
 
@@ -40,6 +42,7 @@ export default App;
 
 | Name     | Required | Default   | Type     | Example            |
 | -------- | -------- | --------- | -------- | ------------------ |
+| title    | no       | undefined | string   | [Click](#title)    |
 | onClose  | no       | undefined | function | [Click](#onclose)  |
 | onCreate | no       | undefined | function | [Click](#oncreate) |
 | onFocus  | no       | undefined | function | [Click](#onfocus)  |
@@ -49,6 +52,22 @@ export default App;
 [Back to top](#react-modal)
 
 ## Props Examples
+
+### title
+
+```js
+import Modal from '@fsmnk/react-modal';
+
+const App = () => {
+  return (
+    <div className="App">
+      <Modal title="Lorem ipsum">...</Modal>
+    </div>
+  );
+};
+
+export default App;
+```
 
 ### onClose
 
