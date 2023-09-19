@@ -18,6 +18,7 @@ export type DialogProps = {
 export type ModalProps = {
   children?: React.ReactNode;
   title?: string;
+  onOpen?: () => void;
 };
 
 export type CloseIconProps = {
