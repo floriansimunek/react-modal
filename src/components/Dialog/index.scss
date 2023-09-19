@@ -23,5 +23,35 @@
     background: white;
     width: 25vw;
     height: 60vh;
+    border-radius: 5px;
+    border: 1px solid var(--rm-darkgray);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &--header {
+      background-color: var(--rm-gray);
+      border-bottom: 1px solid var(--rm-darkgray);
+
+      &-title {
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: bold;
+      }
+    }
+
+    &--body {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    &--footer {
+      padding: 1rem;
+      background-color: var(--rm-gray);
+      border-top: 1px solid var(--rm-darkgray);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
   }
 }
