@@ -33,4 +33,12 @@ describe('Modal', () => {
       });
     });
   });
+
+  describe('When called with Title prop', () => {
+    it('should add the title', () => {
+      render(<Modal title="Lorem ipsum"></Modal>);
+      const title = screen.getByText('Lorem ipsum');
+      expect(title).toBeInTheDocument();
+    });
+  });
 });
