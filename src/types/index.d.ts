@@ -20,6 +20,7 @@ export type ModalProps = {
   title?: string;
   onOpen?: () => void;
   onClose?: () => void;
+  onCreate?: () => void;
 };
 
 export type CloseIconProps = {
