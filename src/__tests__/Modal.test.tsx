@@ -14,12 +14,12 @@ describe('Modal', () => {
     });
 
     it('should render the Button', () => {
-      const button = screen.getByTestId('modal--button');
+      const button = screen.getByTestId('modal__button');
       expect(button).toBeInTheDocument();
     });
 
     it('should render the Dialog', () => {
-      const container = screen.getByTestId('modal--container');
+      const container = screen.getByTestId('modal__container');
       expect(container).toBeInTheDocument();
     });
 

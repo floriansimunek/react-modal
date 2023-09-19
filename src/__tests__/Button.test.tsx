@@ -15,7 +15,7 @@ describe('Modal', () => {
 
   describe('When button clicked', () => {
     it('should open the modal', () => {
-      const button = screen.getByTestId('modal--button');
+      const button = screen.getByTestId('modal__button');
       const modal = screen.getByTestId('modal');
 
       expect(modal.getAttribute('data-rm-is-open')).toBe('false');
@@ -28,9 +28,9 @@ describe('Modal', () => {
 
   describe('When modal is open', () => {
     it('should close the modal when clicking on the container', () => {
-      const button = screen.getByTestId('modal--button');
+      const button = screen.getByTestId('modal__button');
       const modal = screen.getByTestId('modal');
-      const container = screen.getByTestId('modal--container');
+      const container = screen.getByTestId('modal__container');
 
       expect(modal.getAttribute('data-rm-is-open')).toBe('false');
       act(() => button.click());
@@ -40,9 +40,9 @@ describe('Modal', () => {
     });
 
     it('should not close when clicking the dialog', () => {
-      const button = screen.getByTestId('modal--button');
+      const button = screen.getByTestId('modal__button');
       const modal = screen.getByTestId('modal');
-      const dialog = screen.getByTestId('modal--dialog');
+      const dialog = screen.getByTestId('modal__dialog');
 
       act(() => button.click());
       expect(modal.getAttribute('data-rm-is-open')).toBe('true');
