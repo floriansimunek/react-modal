@@ -6,4 +6,16 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  .modal--icon-container {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal--icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }

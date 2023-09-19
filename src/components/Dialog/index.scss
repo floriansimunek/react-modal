@@ -38,6 +38,16 @@
         padding: 1rem;
         font-weight: bold;
       }
+
+      .modal--icon-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
 
     &--body {
