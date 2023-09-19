@@ -4,6 +4,8 @@ Simple Modal working with React
 
 - [Installation](#installation)
 - [Usage/Examples](#usageexamples)
+- [Props](#props)
+  - [Examples](#props-examples)
 
 ## Installation
 
