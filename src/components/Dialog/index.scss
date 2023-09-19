@@ -1,4 +1,10 @@
 .modal {
+  &[data-rm-is-open='true'] {
+    .modal--container {
+      display: block;
+    }
+  }
+
   .modal--container {
     background: #00000050;
     position: absolute;
@@ -6,6 +12,7 @@
     right: 0;
     bottom: 0;
     left: 0;
+    display: none;
   }
 
   .modal--dialog {
