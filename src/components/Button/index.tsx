@@ -5,7 +5,7 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
 }) => {
   return (
-    <button type="button" onClick={onClick}>
+    <button type="button" data-testid="modal--button" onClick={onClick}>
       {children}
     </button>
   );
