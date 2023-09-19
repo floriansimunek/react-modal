@@ -8,7 +8,7 @@ const Modal: React.FC<ModalProps> = ({ children }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <div className="modal" data-rm-is-open={isOpen}>
+    <div className="modal" data-testid="modal" data-rm-is-open={isOpen}>
       <Dialog onClick={() => setIsOpen(false)}>{children}</Dialog>
       <Button onClick={() => setIsOpen(!isOpen)} />
     </div>
