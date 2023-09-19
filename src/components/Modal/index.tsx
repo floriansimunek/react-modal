@@ -9,7 +9,7 @@ const Modal: React.FC<ModalProps> = ({ children }) => {
 
   return (
     <div className="modal" data-rm-is-open={isOpen}>
-      <Dialog>{children}</Dialog>
+      <Dialog onClick={() => setIsOpen(false)}>{children}</Dialog>
       <Button onClick={() => setIsOpen(!isOpen)} />
     </div>
   );
