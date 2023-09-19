@@ -8,8 +8,8 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       type="button"
-      className="modal--button"
-      data-testid="modal--button"
+      className="modal__button"
+      data-testid="modal__button"
       onClick={onClick}
     >
       {children}
