@@ -5,6 +5,7 @@ export type ButtonProps = {
 
 export type DialogProps = {
   children?: React.ReactNode;
+  onClick?: () => void;
 };
 
 export type ModalProps = {
